@@ -1,0 +1,93 @@
+.main-background {
+    hsl(0, 100%, 100%);
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.split-background {
+    margin: 43px;
+    height: 80vh;
+    width: 90vw;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    background: linear-gradient(to bottom,
+            hsl(292, 42%, 14%) 0%,
+            hsl(292, 42%, 14%) 30%,
+            hsl(275, 100%, 97%) 30%,
+            hsl(275, 100%, 97%) 100%);
+    box-shadow: 5px 5px 15px rgb(181, 181, 181);        
+}
+.container{
+    margin: 23px;
+    padding: 23px;
+    height: 400px;
+    width:400px;
+    background-color: hsl(0, 100%, 100%);
+    box-shadow: 5px 5px 15px rgb(201, 201, 201);
+    border-radius: 14px;
+    overflow: hidden;
+}
+.faq-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .star-icon {
+    width: 48px;
+    height: 48px;
+    fill: #8b5cf6; /* Purple color */
+  }
+  h1{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+  }
+  .accordion {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+  }
+  
+  .accordion summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    list-style: none;
+    position: relative;
+    padding-right: 1.5rem;
+  }
+  
+  .accordion summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .accordion summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    color: #a729f5;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+  }
+  
+  .accordion[open] summary::after {
+    content: '−';
+  }
+  
+  .accordion p {
+    margin: 0.5rem 0 0;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  .accordion[open] p {
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
